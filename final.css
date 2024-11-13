@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+    color: #666666;
+}
+
+#wrapper {
+    background: linear-gradient(to bottom, #000000, #FDB913);
+    margin: 0 auto;
+    width: 100%;
+    max-width: 2048px;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #FDB913;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header a:hover {
+    color: #666666;
+}
+
+nav {
+    background-color: #000000;
+    padding: 1em;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FDB913;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all .5s ease;
+}
+
+nav a:hover {
+    color: #FF6600;
+    background-color: #63666A;
+}
+
+nav a:visited {
+    color: #808080;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#hero {
+    width: 100%;
+    height: 400px;
+    background-image: url(fitness_hero_crop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.full-width-section {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.intro-text {
+    margin: 20px 0;
+}
+
+.divider {
+    width: 75%;
+    height: 1px;
+    background-color: #808080;
+    margin: 30px auto;
+}
+
+.exercise-container {
+    width: 100%;
+}
+
+.exercise-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.exercise-table, .video-container {
+    flex: 0 0 48%;  /* flex-grow: 0, flex-shrink: 0, flex-basis: 48% */
+    margin: 0 1%;
+}
+
+.video-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9;  /* Maintains video proportions */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th {
+    background-color: #FDB913;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #cccccc;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+.row-light {
+    background-color: #ffffff;
+}
+
+.row-dark {
+    background-color: #f5f5f5;
+}
+
+.subheader {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #ffffff;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding: 2em;
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #808080;
+    margin: 0 auto 2em auto;
+    position: absolute;
+    top: 0;
+    left: 25%;
+}
+
+#contact {
+    font-size: 90%;
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .exercise-section {
+        flex-direction: column;
+    }
+    
+    .exercise-table, .video-container {
+        width: 100%;
+    }
+
+    .exercise-table, .video-container {
+        flex: 0 0 48%;  /* flex-grow: 0, flex-shrink: 0, flex-basis: 48% */
+        margin: 0 1%;
+    }
+    
+    .video-container iframe {
+        width: 100%;
+        height: 315px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .video-container iframe {
+        height: 250px;
+    }
+}
+
+footer {
+    background-color: #ffffff;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding: 2em;
+    margin-top: auto;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #808080;
+    margin: 0 auto 2em auto;
+}
+
+@media screen and (max-width: 767px) {
+    footer::before {
+        width: 75%;
+        left: 0;
+        right: 0;
+    }
+}
+
+#contact {
+    font-size: 90%;
+}
