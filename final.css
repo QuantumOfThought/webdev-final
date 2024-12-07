@@ -7,6 +7,11 @@ body {
     padding: 0;
     font-family: 'Prompt', sans-serif;
     color: #666666;
+    min-height: 1080px;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 #wrapper {
@@ -84,7 +89,43 @@ nav li {
 #hero {
     width: 100%;
     height: 400px;
-    background-image: url(fitness_hero_crop.png);
+    background-image: url(gym.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heropush {
+    width: 100%;
+    height: 400px;
+    background-image: url(bench.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heropull {
+    width: 100%;
+    height: 400px;
+    background-image: url(dumbbell.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#herolegs {
+    width: 100%;
+    height: 400px;
+    background-image: url(squat2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#herocardio {
+    width: 100%;
+    height: 400px;
+    background-image: url(rowhero2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,6 +218,43 @@ td {
     background-color: #f0f0f0;
 }
 
+form {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #63666A;
+    border: 1px solid #cccccc;
+}
+
+label {
+    display: block;
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #FDB913;
+    color: #000000;
+    border: none;
+}
+
 footer {
     background-color: #ffffff;
     font-size: 75%;
@@ -211,11 +289,15 @@ footer::before {
     width: 100%;
 }
 
+footer a {
+    color: #ffffff;
+}
+
 @media screen and (max-width: 1200px) {
     .exercise-section {
         flex-direction: column;
     }
-    
+
     .exercise-table, .video-container {
         width: 100%;
     }
@@ -224,7 +306,7 @@ footer::before {
         flex: 0 0 48%;  /* flex-grow: 0, flex-shrink: 0, flex-basis: 48% */
         margin: 0 1%;
     }
-    
+
     .video-container iframe {
         width: 100%;
         height: 315px;
@@ -236,11 +318,11 @@ footer::before {
         flex-direction: column;
         align-items: center;
     }
-    
+
     nav li {
         margin: 5px 0;
     }
-    
+
     .video-container iframe {
         height: 250px;
     }
@@ -273,8 +355,4 @@ footer::before {
         left: 0;
         right: 0;
     }
-}
-
-#contact {
-    font-size: 90%;
 }

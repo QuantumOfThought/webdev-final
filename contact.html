@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><a href="final.html">Fitness Program</a></h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="final.html">Home</a></li>
+                <li><a href="push.html">Push Day</a></li>
+                <li><a href="pull.html">Pull Day</a></li>
+                <li><a href="legs.html">Leg Day</a></li>
+                <li><a href="cardio.html">Cardio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div id="hero"></div>
+
+        <main>
+            <div class="full-width-section">
+                <h2>Contact Us</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                    <label for="date">Pick a date for me to contact you:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label>Preferred Training Method:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="online" name="training" value="online">
+                        <label for="online">Online Training</label>
+                        <input type="checkbox" id="inperson" name="training" value="inperson">
+                        <label for="inperson">In-Person Training</label>
+                    </div>
+
+                    <label for="comments">What else do I need to know/What are you looking to accomplish?</label>
+                    <textarea id="comments" name="comments" placeholder="Your comments" required></textarea>
+
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div id="contact">
+                Copyright &copy; 2024 FHSU Fall Semester Classes<br>
+                <a href="mailto:j_mckowski@mail.fhsu.edu">j_mckowski@mail.fhsu.edu</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
